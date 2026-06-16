@@ -1,0 +1,180 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#111827;
+position:fixed;
+width:100%;
+z-index:1000;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:100px 10%;
+}
+
+.hero-content h1{
+font-size:5rem;
+color:#38bdf8;
+}
+
+.hero-image img{
+width:350px;
+border-radius:50%;
+border:5px solid #38bdf8;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin-top:20px;
+margin-right:10px;
+}
+
+.secondary{
+background:transparent;
+border:2px solid #38bdf8;
+}
+
+section{
+padding:100px 10%;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.skill-card{
+padding:15px 25px;
+background:#1e293b;
+border-radius:10px;
+}
+
+.project-container{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+}
+
+.project-card img{
+width:100%;
+border-radius:10px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:600px;
+}
+
+input,
+textarea{
+padding:15px;
+border:none;
+border-radius:10px;
+}
+
+button{
+padding:15px;
+background:#38bdf8;
+border:none;
+border-radius:10px;
+color:white;
+cursor:pointer;
+}
+
+
+
+
+.navbar.active{
+background:#020617;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+
+
+
+#skills{
+    padding:100px 10%;
+}
+
+#skills h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    cursor:pointer;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.skill-card span{
+    font-size:3rem;
+    display:block;
+    margin-bottom:15px;
+}
+
+.skill-card h3{
+    color:white;
+    font-size:1.2rem;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 0 25px #38bdf8;
+    border-color:#38bdf8;
+}
